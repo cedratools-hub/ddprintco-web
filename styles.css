@@ -166,3 +166,137 @@ footer{background:#fffaf2;border-color:var(--line)}
 .factory-stat{border-color:var(--line)}.factory-stat strong{color:#0f7f86}.factory-stat span{color:var(--muted)}
 .faq-list,.faq details{border-color:var(--line)}.faq summary:after{color:#ff6b2c}.faq details p{color:var(--muted)}
 @media(max-width:980px){.main-nav{background:#fffaf2;border-color:var(--line)}}
+
+
+/* v1.4 — Hero rebuilt as an actual 3D manufacturing world */
+.brand{background:transparent!important;box-shadow:none!important;padding:0!important;border-radius:0!important;overflow:visible}
+.brand-crop{display:block;width:190px;height:74px;overflow:hidden;position:relative}
+.brand-crop img{position:absolute;width:400px!important;max-width:none;height:auto!important;left:50%;top:50%;transform:translate(-50%,-50%) scale(1.02);object-fit:contain}
+.hero{grid-template-columns:1.02fr .98fr!important;gap:40px}
+.hero-visual.hero-manufacturing{min-height:650px!important;display:flex!important;align-items:center;justify-content:center}
+.factory-banner{
+  position:relative;
+  width:min(720px,100%);
+  min-height:590px;
+  border-radius:34px;
+  overflow:hidden;
+  padding:26px 28px 24px;
+  background:
+    radial-gradient(circle at 85% 18%,rgba(25,183,194,.20),transparent 25%),
+    radial-gradient(circle at 12% 82%,rgba(255,107,44,.14),transparent 22%),
+    linear-gradient(180deg,#ffffff 0%,#f5efe5 100%);
+  border:1px solid #ddd5c7;
+  box-shadow:0 35px 90px rgba(18,49,58,.15)
+}
+.factory-banner:before{
+  content:"";
+  position:absolute;inset:16px;border:1px solid rgba(18,49,58,.07);
+  border-radius:26px;pointer-events:none
+}
+.factory-logo-wrap{
+  width:430px;height:138px;overflow:hidden;position:relative;z-index:3
+}
+.factory-logo{
+  position:absolute;width:860px!important;max-width:none;height:auto!important;
+  left:50%;top:50%;transform:translate(-50%,-50%);
+  filter:drop-shadow(0 10px 18px rgba(18,49,58,.08))
+}
+.factory-kicker{
+  position:relative;z-index:3;
+  margin:2px 0 14px;
+  font:700 10px "Space Mono";letter-spacing:.14em;color:#0f7f86
+}
+.printer-world{
+  position:relative;z-index:2;height:330px;
+  border-radius:26px;
+  background:linear-gradient(180deg,rgba(238,248,247,.65),rgba(255,255,255,.72));
+  border:1px solid #d9e3df;
+  overflow:hidden
+}
+.printer-world:before{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:82px;
+  background:linear-gradient(180deg,rgba(255,255,255,0),rgba(18,49,58,.055))
+}
+.printer-machine{
+  position:absolute;width:210px;height:245px;bottom:22px;
+  border:3px solid #12313a;border-radius:22px 22px 14px 14px;
+  background:rgba(255,255,255,.78);
+  box-shadow:0 18px 30px rgba(18,49,58,.10)
+}
+.printer-one{left:38px;transform:rotate(-2deg)}
+.printer-two{right:40px;transform:rotate(2deg)}
+.printer-gantry{
+  position:absolute;left:20px;right:20px;top:28px;height:12px;background:#12313a;border-radius:999px
+}
+.printer-head{
+  position:absolute;width:72px;height:34px;top:57px;left:50%;transform:translateX(-50%);
+  border-radius:10px;background:#19b7c2;box-shadow:0 8px 15px rgba(25,183,194,.22)
+}
+.printer-head span{
+  position:absolute;width:10px;height:38px;background:#12313a;left:50%;top:28px;transform:translateX(-50%);border-radius:6px
+}
+.printer-bed{
+  position:absolute;left:20px;right:20px;bottom:30px;height:16px;background:#12313a;border-radius:999px
+}
+.printed-part{position:absolute;left:50%;bottom:47px;transform:translateX(-50%);display:grid;place-items:center;z-index:2}
+.promo-part{
+  width:88px;height:72px;border-radius:18px 18px 26px 26px;
+  background:linear-gradient(145deg,#ff6b2c,#f2b321);color:white;
+  font:700 18px "Archivo Black";box-shadow:0 12px 22px rgba(255,107,44,.24)
+}
+.promo-part:before{
+  content:"";position:absolute;width:16px;height:16px;border-radius:50%;border:4px solid #fff;top:-11px
+}
+.bracket-part{
+  width:104px;height:86px;background:linear-gradient(145deg,#19b7c2,#0f7f86);
+  clip-path:polygon(0 0,100% 0,100% 24%,69% 24%,69% 100%,44% 100%,44% 24%,0 24%);
+  box-shadow:0 12px 22px rgba(15,127,134,.22)
+}
+.layer-lines{
+  position:absolute;left:36px;right:36px;bottom:80px;height:56px;
+  background:repeating-linear-gradient(to bottom,rgba(18,49,58,.12) 0 1px,transparent 1px 7px);
+  opacity:.55
+}
+.spool{
+  position:absolute;left:50%;top:48%;width:112px;height:112px;transform:translate(-50%,-50%);
+  border-radius:50%;border:18px solid #ff6b2c;background:#fff8f4;
+  box-shadow:0 16px 30px rgba(255,107,44,.16)
+}
+.spool-core{position:absolute;width:38px;height:38px;border-radius:50%;background:#12313a;left:50%;top:50%;transform:translate(-50%,-50%)}
+.filament-line{
+  position:absolute;width:150px;height:3px;background:#ff6b2c;left:86px;top:52px;transform:rotate(7deg);
+  transform-origin:left center
+}
+.floating-part{
+  position:absolute;border:1px solid #cad9d7;background:rgba(255,255,255,.88);
+  color:#12313a;font:700 10px "Space Mono";padding:9px 11px;border-radius:10px;
+  box-shadow:0 10px 20px rgba(18,49,58,.08)
+}
+.part-1{left:276px;top:38px;transform:rotate(-8deg)}
+.part-2{left:282px;bottom:35px;transform:rotate(7deg)}
+.part-3{left:50%;bottom:82px;transform:translateX(-50%) rotate(-3deg);background:#eef8f7;color:#0f7f86}
+.factory-caption{
+  position:relative;z-index:3;display:flex;gap:8px;flex-wrap:wrap;margin-top:16px
+}
+.factory-caption span{
+  border-radius:999px;background:#fff;border:1px solid #ddd5c7;
+  padding:9px 12px;color:#0f7f86;font:700 9px "Space Mono";letter-spacing:.06em
+}
+.machine-card,.cube,.orb{display:none!important}
+@media(max-width:1180px){
+  .hero{grid-template-columns:1fr!important}
+  .hero-visual.hero-manufacturing{min-height:auto!important}
+  .factory-banner{width:100%}
+}
+@media(max-width:700px){
+  .brand-crop{width:150px;height:62px}
+  .brand-crop img{width:320px!important}
+  .factory-logo-wrap{width:100%;height:112px}
+  .factory-logo{width:680px!important}
+  .printer-world{height:590px}
+  .printer-machine{width:210px}
+  .printer-one{left:50%;top:20px;bottom:auto;transform:translateX(-50%) rotate(-2deg)}
+  .printer-two{left:50%;right:auto;bottom:20px;transform:translateX(-50%) rotate(2deg)}
+  .spool{display:none}
+  .floating-part{display:none}
+}
