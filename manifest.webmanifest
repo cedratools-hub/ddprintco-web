@@ -1,0 +1,9 @@
+{
+  "name":"D&D Print Co.",
+  "short_name":"D&D Print Co.",
+  "start_url":"/",
+  "display":"standalone",
+  "background_color":"#070807",
+  "theme_color":"#070807",
+  "icons":[{"src":"assets/logo.png","sizes":"512x512","type":"image/png","purpose":"any"}]
+}
