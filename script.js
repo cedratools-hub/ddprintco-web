@@ -39,3 +39,8 @@ document.getElementById("quoteForm").addEventListener("submit",e=>{
   document.getElementById("formStatus").textContent="Solicitud preparada. Falta conectar el correo/WhatsApp corporativo para enviarla automáticamente.";
   navigator.clipboard?.writeText(subject+"\n\n"+body).catch(()=>{});
 });
+
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add("is-visible");observer.unobserve(entry.target);}})
+},{threshold:.12});
+document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
