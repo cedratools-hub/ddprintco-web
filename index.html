@@ -17,6 +17,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"D&D Print Co.",
+    "url":"https://ddprintco.com/",
+    "logo":"https://ddprintco.com/assets/logo.png",
+    "description":"Diseño, prototipado y fabricación bajo demanda de piezas y soluciones físicas para empresas, emprendedores y personas.",
+    "slogan":"You think it. We make it."
+  }
+  </script>
 </head>
 <body>
   <div class="noise"></div>
@@ -27,6 +38,7 @@
     <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
     <nav class="main-nav">
       <a href="#soluciones">Soluciones</a>
+      <a href="#aplicaciones">Aplicaciones</a>
       <a href="#materiales">Materiales</a>
       <a href="#proceso">Proceso</a>
       <a href="#nosotros">Quiénes somos</a>
@@ -126,6 +138,53 @@
       </div>
     </section>
 
+
+    <section class="applications" id="aplicaciones">
+      <div class="section-heading split">
+        <div>
+          <span>DE LO DIGITAL A LO FÍSICO</span>
+          <h2>Fabricamos cosas que resuelven.</h2>
+        </div>
+        <p>No vendemos horas de impresora. Entregamos objetos útiles, prototipos que aceleran decisiones y piezas creadas para una necesidad concreta.</p>
+      </div>
+
+      <div class="application-grid">
+        <article class="application-card app-functional reveal">
+          <div class="app-art">
+            <div class="part part-a"></div><div class="part part-b"></div><div class="part part-c"></div>
+          </div>
+          <div class="app-copy"><span>01 / INDUSTRIA</span><h3>Piezas funcionales</h3><p>Jigs, soportes, carcasas, adaptadores, guías y refacciones de bajo volumen.</p></div>
+        </article>
+        <article class="application-card app-prototype reveal">
+          <div class="app-art"><div class="proto-ring"></div><div class="proto-core">V1</div></div>
+          <div class="app-copy"><span>02 / PRODUCTO</span><h3>Prototipos y MVP</h3><p>Valida ergonomía, ensamble, dimensiones y función antes de producir en grande.</p></div>
+        </article>
+        <article class="application-card app-brand reveal">
+          <div class="app-art"><div class="brand-object">D&D</div><div class="brand-shadow"></div></div>
+          <div class="app-copy"><span>03 / MARKETING</span><h3>Objetos de marca</h3><p>Promocionales, displays y piezas memorables diseñadas específicamente para tu empresa.</p></div>
+        </article>
+        <article class="application-card app-repair reveal">
+          <div class="app-art"><div class="broken one"></div><div class="broken two"></div><div class="join">+</div></div>
+          <div class="app-copy"><span>04 / REEMPLAZO</span><h3>Lo que ya no existe</h3><p>Recreamos piezas difíciles de conseguir y las adaptamos cuando el original puede mejorarse.</p></div>
+        </article>
+        <article class="application-card app-custom reveal">
+          <div class="app-art"><div class="custom-plate">CUSTOM<br>01/01</div></div>
+          <div class="app-copy"><span>05 / PERSONALIZACIÓN</span><h3>Una sola pieza también importa</h3><p>Diseño a medida para personas, talleres, negocios y proyectos especiales.</p></div>
+        </article>
+        <article class="application-card app-series reveal">
+          <div class="app-art"><div class="series-dot"></div><div class="series-dot"></div><div class="series-dot"></div><div class="series-dot"></div><div class="series-dot"></div><div class="series-dot"></div></div>
+          <div class="app-copy"><span>06 / PRODUCCIÓN</span><h3>Series cortas bajo demanda</h3><p>Producción flexible sin invertir primero en moldes o inventarios innecesarios.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="factory-band" aria-label="Capacidades de fabricación">
+      <div class="factory-stat"><strong>01→100+</strong><span>Una pieza o series cortas</span></div>
+      <div class="factory-stat"><strong>MULTICOLOR</strong><span>Producción visual compleja</span></div>
+      <div class="factory-stat"><strong>CAD + DFM</strong><span>Diseño pensado para fabricar</span></div>
+      <div class="factory-stat"><strong>TECH MATERIALS</strong><span>Materiales según aplicación</span></div>
+    </section>
+
     <section class="industries">
       <div class="ticker"><span>INDUSTRIA</span><i>×</i><span>AUTOMOTRIZ</span><i>×</i><span>RETAIL</span><i>×</i><span>EVENTOS</span><i>×</i><span>EMPRENDEDORES</span><i>×</i><span>MARKETING</span></div>
     </section>
@@ -178,6 +237,21 @@
         <p>Uno diseña. El otro encuentra el problema. Uno dice “ya quedó”. El otro responde “hazlo otra vez”. Así nació Dude & Dude.</p>
         <p>No importa quiénes sean los Dudes. Lo importante es que nunca haya un Dude solo frente a un problema difícil.</p>
         <blockquote>“Dude… tengo una idea.”<br><strong>“Va. Hagámosla.”</strong></blockquote>
+      </div>
+    </section>
+
+
+    <section class="faq" id="faq">
+      <div class="section-heading split">
+        <div><span>PREGUNTAS FRECUENTES</span><h2>Lo importante antes de fabricar.</h2></div>
+        <p>Si no encuentras aquí tu caso, entra por “Tengo un problema”. Justamente para eso existe D&D Print Co.</p>
+      </div>
+      <div class="faq-list">
+        <details><summary>¿Necesito tener un archivo STL o 3MF?</summary><p>No. Podemos empezar desde una idea, una foto, un dibujo, una pieza física o una descripción del problema.</p></details>
+        <details><summary>¿Pueden fabricar una sola pieza?</summary><p>Sí. La manufactura bajo demanda permite producir desde una unidad hasta series cortas, según el proyecto.</p></details>
+        <details><summary>¿Cómo eligen el material?</summary><p>Consideramos función, temperatura, flexibilidad, desgaste, exposición, acabado, geometría y presupuesto. La selección depende de la aplicación real.</p></details>
+        <details><summary>¿Pueden copiar una pieza existente?</summary><p>Podemos analizarla, medirla y rediseñarla cuando el proyecto lo permite, incluyendo ajustes para mejorar su fabricación o desempeño.</p></details>
+        <details><summary>¿Trabajan proyectos para empresas?</summary><p>Sí. Podemos desarrollar prototipos, fixtures, soportes, refacciones, displays, promocionales y series de producción recurrentes.</p></details>
       </div>
     </section>
 
