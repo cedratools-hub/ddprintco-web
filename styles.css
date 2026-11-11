@@ -170,14 +170,17 @@ footer{background:#fffaf2;border-color:var(--line)}
 
 /* v1.4 — Hero rebuilt as an actual 3D manufacturing world */
 .brand{background:transparent!important;box-shadow:none!important;padding:0!important;border-radius:0!important;overflow:visible}
-.brand-crop{display:block;width:190px;height:74px;overflow:hidden;position:relative}
-.brand-crop img{position:absolute;width:400px!important;max-width:none;height:auto!important;left:50%;top:50%;transform:translate(-50%,-50%) scale(1.02);object-fit:contain}
-.hero{grid-template-columns:1.02fr .98fr!important;gap:40px}
-.hero-visual.hero-manufacturing{min-height:650px!important;display:flex!important;align-items:center;justify-content:center}
+.brand-logo-wrap{display:block;width:104px;flex:none}
+.brand .brand-logo-wrap img{display:block;position:static;width:100%;max-width:100%;height:auto;transform:none;object-fit:contain}
+.hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px}
+.hero-copy,.hero-visual{min-width:0}
+.hero h1{font-size:clamp(52px,5.8vw,100px)}
+.main-nav{gap:clamp(12px,1.7vw,28px)}
+.hero-visual.hero-manufacturing{min-height:0;display:flex;align-items:center;justify-content:center}
 .factory-banner{
   position:relative;
   width:min(720px,100%);
-  min-height:590px;
+  min-height:0;
   border-radius:34px;
   overflow:hidden;
   padding:26px 28px 24px;
@@ -194,16 +197,15 @@ footer{background:#fffaf2;border-color:var(--line)}
   border-radius:26px;pointer-events:none
 }
 .factory-logo-wrap{
-  width:430px;height:138px;overflow:hidden;position:relative;z-index:3
+  width:min(100%,340px);margin:0 auto 20px;position:relative;z-index:3
 }
 .factory-logo{
-  position:absolute;width:860px!important;max-width:none;height:auto!important;
-  left:50%;top:50%;transform:translate(-50%,-50%);
+  display:block;width:100%;max-width:100%;height:auto;
   filter:drop-shadow(0 10px 18px rgba(18,49,58,.08))
 }
 .factory-kicker{
   position:relative;z-index:3;
-  margin:2px 0 14px;
+  margin:2px 0 14px;text-align:center;
   font:700 10px "Space Mono";letter-spacing:.14em;color:#0f7f86
 }
 .printer-world{
@@ -218,13 +220,13 @@ footer{background:#fffaf2;border-color:var(--line)}
   background:linear-gradient(180deg,rgba(255,255,255,0),rgba(18,49,58,.055))
 }
 .printer-machine{
-  position:absolute;width:210px;height:245px;bottom:22px;
+  position:absolute;width:39%;height:245px;bottom:22px;
   border:3px solid #12313a;border-radius:22px 22px 14px 14px;
   background:rgba(255,255,255,.78);
   box-shadow:0 18px 30px rgba(18,49,58,.10)
 }
-.printer-one{left:38px;transform:rotate(-2deg)}
-.printer-two{right:40px;transform:rotate(2deg)}
+.printer-one{left:5%;transform:rotate(-2deg)}
+.printer-two{right:5%;transform:rotate(2deg)}
 .printer-gantry{
   position:absolute;left:20px;right:20px;top:28px;height:12px;background:#12313a;border-radius:999px
 }
@@ -284,15 +286,16 @@ footer{background:#fffaf2;border-color:var(--line)}
 }
 .machine-card,.cube,.orb{display:none!important}
 @media(max-width:1180px){
-  .hero{grid-template-columns:1fr!important}
+  .hero{grid-template-columns:1fr}
   .hero-visual.hero-manufacturing{min-height:auto!important}
   .factory-banner{width:100%}
 }
 @media(max-width:700px){
-  .brand-crop{width:150px;height:62px}
-  .brand-crop img{width:320px!important}
-  .factory-logo-wrap{width:100%;height:112px}
-  .factory-logo{width:680px!important}
+  .brand-logo-wrap{width:80px}
+  .factory-banner{padding:22px 18px;border-radius:24px}
+  .factory-logo-wrap{width:min(100%,280px)}
+  .factory-kicker{font-size:9px;letter-spacing:.06em}
+  .main-nav{top:99px}
   .printer-world{height:590px}
   .printer-machine{width:210px}
   .printer-one{left:50%;top:20px;bottom:auto;transform:translateX(-50%) rotate(-2deg)}
@@ -300,3 +303,5 @@ footer{background:#fffaf2;border-color:var(--line)}
   .spool{display:none}
   .floating-part{display:none}
 }
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
