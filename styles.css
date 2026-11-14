@@ -305,3 +305,34 @@ footer{background:#fffaf2;border-color:var(--line)}
 }
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+
+/* preview 2026-11-14 — full logo + clear 3D factory hero */
+.brand-logo-wrap{width:118px}
+.brand .brand-logo-wrap img{width:100%;height:auto;object-fit:contain}
+.factory-logo-wrap{width:min(100%,360px);overflow:visible}
+.factory-logo{width:100%;height:auto;object-fit:contain}
+.printer-world-svg{height:auto;min-height:0;overflow:hidden;background:#f9fcfb}
+.printer-world-svg svg{display:block;width:100%;height:auto}
+@media(max-width:1180px){
+  .hero{grid-template-columns:1fr!important;gap:36px}
+  .hero-copy{max-width:840px}
+  .hero-visual.hero-manufacturing{width:100%;max-width:760px;margin:0 auto}
+}
+@media(max-width:700px){
+  .site-header{min-height:82px}
+  .brand-logo-wrap{width:96px}
+  .main-nav{display:none}
+  .menu-toggle{display:block}
+  .hero{padding-top:38px!important;gap:28px}
+  .hero h1{font-size:clamp(50px,15vw,66px);line-height:.9}
+  .hero-lead{font-size:17px}
+  .hero-actions{display:grid;grid-template-columns:1fr}
+  .hero-actions .button{width:100%}
+  .factory-banner{padding:18px 14px 16px;border-radius:24px}
+  .factory-logo-wrap{width:min(100%,250px);margin-bottom:12px}
+  .factory-kicker{font-size:8px;line-height:1.45}
+  .printer-world-svg{height:auto}
+  .factory-caption{gap:6px}
+  .factory-caption span{font-size:8px;padding:7px 9px}
+}
