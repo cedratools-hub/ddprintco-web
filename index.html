@@ -70,31 +70,62 @@
 
           <div class="factory-kicker">DIGITAL FACTORY · 3D MANUFACTURING</div>
 
-          <div class="printer-world">
-            <div class="printer-machine printer-one">
-              <div class="printer-gantry"></div>
-              <div class="printer-head"><span></span></div>
-              <div class="printer-bed"></div>
-              <div class="printed-part promo-part">D&D</div>
-              <div class="layer-lines"></div>
-            </div>
+          <div class="printer-world printer-world-svg">
+            <svg viewBox="0 0 760 430" role="img" aria-label="Fábrica digital con dos impresoras 3D produciendo piezas">
+              <defs>
+                <linearGradient id="dd-teal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#35cdd5"/><stop offset="1" stop-color="#0f7f86"/></linearGradient>
+                <linearGradient id="dd-orange" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff8b35"/><stop offset="1" stop-color="#ff5c24"/></linearGradient>
+                <pattern id="dd-grid" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0H0V26" fill="none" stroke="#dce9e6" stroke-width="1"/></pattern>
+                <filter id="dd-shadow"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#12313a" flood-opacity=".12"/></filter>
+              </defs>
+              <rect width="760" height="430" rx="24" fill="#f9fcfb"/>
+              <rect width="760" height="430" rx="24" fill="url(#dd-grid)" opacity=".8"/>
+              <path d="M40 346H720" stroke="#c9d8d5" stroke-width="3"/>
+              <path d="M90 383H670" stroke="#e6ece9" stroke-width="2"/>
 
-            <div class="printer-machine printer-two">
-              <div class="printer-gantry"></div>
-              <div class="printer-head"><span></span></div>
-              <div class="printer-bed"></div>
-              <div class="printed-part bracket-part"></div>
-              <div class="layer-lines"></div>
-            </div>
+              <g transform="translate(70 72)" filter="url(#dd-shadow)">
+                <rect width="240" height="275" rx="18" fill="#fff" stroke="#12313a" stroke-width="5"/>
+                <rect x="22" y="24" width="196" height="188" rx="12" fill="#eef8f7" stroke="#a9c6c5" stroke-width="2"/>
+                <path d="M42 55H198M55 45V198M185 45V198" stroke="#12313a" stroke-width="7" stroke-linecap="round"/>
+                <rect x="86" y="74" width="68" height="36" rx="9" fill="url(#dd-teal)"/>
+                <path d="M120 108v48" stroke="#12313a" stroke-width="8" stroke-linecap="round"/>
+                <rect x="48" y="181" width="144" height="17" rx="8" fill="#12313a"/>
+                <path d="M82 180l16-51h45l20 51z" fill="url(#dd-orange)" stroke="#fff" stroke-width="4"/>
+                <circle cx="206" cy="232" r="16" fill="#19b7c2"/>
+                <rect x="38" y="231" width="110" height="14" rx="7" fill="#dce8e5"/>
+              </g>
 
-            <div class="spool">
-              <div class="spool-core"></div>
-              <div class="filament-line"></div>
-            </div>
+              <g transform="translate(450 72)" filter="url(#dd-shadow)">
+                <rect width="240" height="275" rx="18" fill="#fff" stroke="#12313a" stroke-width="5"/>
+                <rect x="22" y="24" width="196" height="188" rx="12" fill="#fff6ef" stroke="#e8c8b5" stroke-width="2"/>
+                <path d="M42 55H198M55 45V198M185 45V198" stroke="#12313a" stroke-width="7" stroke-linecap="round"/>
+                <rect x="86" y="74" width="68" height="36" rx="9" fill="url(#dd-orange)"/>
+                <path d="M120 108v48" stroke="#12313a" stroke-width="8" stroke-linecap="round"/>
+                <rect x="48" y="181" width="144" height="17" rx="8" fill="#12313a"/>
+                <path d="M82 180v-50h34v18h45v32z" fill="url(#dd-teal)" stroke="#fff" stroke-width="4"/>
+                <circle cx="206" cy="232" r="16" fill="#ff6b2c"/>
+                <rect x="38" y="231" width="110" height="14" rx="7" fill="#eadfd6"/>
+              </g>
 
-            <div class="floating-part part-1">PROTO</div>
-            <div class="floating-part part-2">CUSTOM</div>
-            <div class="floating-part part-3">01/01</div>
+              <g transform="translate(325 118)">
+                <circle cx="56" cy="56" r="50" fill="#fff" stroke="#ff6b2c" stroke-width="16"/>
+                <circle cx="56" cy="56" r="18" fill="#12313a"/>
+                <path d="M106 54c54 0 52 39 99 41" fill="none" stroke="#ff6b2c" stroke-width="5" stroke-linecap="round"/>
+              </g>
+
+              <g transform="translate(300 316)">
+                <rect width="160" height="42" rx="18" fill="#12313a"/>
+                <circle cx="28" cy="42" r="14" fill="#62777b"/><circle cx="80" cy="42" r="14" fill="#62777b"/><circle cx="132" cy="42" r="14" fill="#62777b"/>
+                <rect x="18" y="-18" width="46" height="30" rx="8" fill="#19b7c2"/>
+                <rect x="96" y="-29" width="44" height="41" rx="8" fill="#ff6b2c"/>
+              </g>
+
+              <g font-family="monospace" font-size="12" font-weight="700" fill="#12313a">
+                <text x="108" y="39">NODE 01 · FUNCTIONAL PARTS</text>
+                <text x="492" y="39">NODE 02 · PROTOTYPES</text>
+                <text x="318" y="405" fill="#0f7f86">DESIGN → PROTOTYPE → PRODUCE</text>
+              </g>
+            </svg>
           </div>
 
           <div class="factory-caption">
